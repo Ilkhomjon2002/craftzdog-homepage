@@ -17,7 +17,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -80,14 +79,14 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/wallpapers" path={path}>
+          {/* <LinkItem href="/wallpapers" path={path}>
             Wallpapers
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          </LinkItem> */}
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
-          <LinkItem
+          </LinkItem> */}
+          <LinkItem href="/resume">Resume</LinkItem>
+          {/* <LinkItem
             target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
             path={path}
@@ -98,7 +97,7 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
@@ -119,21 +118,21 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/works">
                   Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/wallpapers">
+                {/* <MenuItem as={MenuLink} href="/wallpapers">
                   Wallpapers
-                </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
+                </MenuItem> */}
+                {/* <MenuItem as={MenuLink} href="/posts">
                   Posts
+                </MenuItem> */}
+                <MenuItem as={MenuLink} href="/resume">
+                  Resume
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
-                </MenuItem>
-                <MenuItem
+                {/* <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
                 >
                   View Source
-                </MenuItem>
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>
